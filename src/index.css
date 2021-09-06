@@ -1,0 +1,763 @@
+/* General Styling */
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+div{
+  margin: 0px;
+  padding: 0px;
+}
+h1{
+  margin: 0px;
+  padding: 0px;
+}
+p{
+  margin: 0px;
+  padding: 0px;
+}
+form{
+  margin: 0px;
+  padding: 0px;
+}
+ul{
+  margin: 0px;
+  padding: 0px;
+}
+li{
+  margin: 0px;
+  padding: 0px;
+}
+Link{
+  margin: 0px;
+  padding: 0px;
+}
+/* HomePage Navbar */
+.home_navbar, .dashboard_navbar, .sdp_navbar, .idp_navbar{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  box-shadow: 0px 15px 10px -15px #111;
+}
+.sdp_navbar{
+  position: fixed;
+  width: 100vw;
+}
+.home_header, .dashboard_header, .sdp_header, .idp_header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home_header p, .dashboard_header p, .sdp_header p, .idp_header p{
+  font-size: 45px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+.signin, .signout{
+  border: 1px solid black;
+  font-size: 30px;
+  top: 30px;
+  right: 100px;
+  position: fixed;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: blue;
+}
+.signin:hover{
+  background-color: blue;
+  color: white;
+}
+/* body part for the homePage */
+.homepage_container{
+  display: flex;
+  justify-content: space-around;
+}
+/* sign up form styling */
+.signup_container{
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+  height: 83vh;
+}
+.signup_div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  justify-content: center;
+}
+.signup_header{
+  height: 80px;
+  width: 70%;
+  background-color: royalblue;
+  border: 1px solid gray;
+  box-shadow: 0px 15px 10px -15px #111;
+}
+.signup_header p{
+  height: 100%;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_container{
+  width: 70%;
+}
+.form_container form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 20px;
+  border: 1px solid gray;
+}
+.form_container form label{
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+.form_container form input{
+  height: 28px;
+  width: 90%;
+  margin-bottom: 10px;
+  font-size: 18px;
+  outline: none;
+  padding-left: 5px;
+}
+.form_container form button{
+  height: 35px;
+  font-size: 25px;
+  margin-top: 5px;
+  background-color: blue;
+  cursor: pointer;
+  color: white;
+}
+/* quotation Styling*/
+.quote_container{
+  width: 40vw;
+  height: 83vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.quote{
+  width: 75%;
+  border: 1px solid gray;
+  height: auto;
+  padding: 20px;
+  line-height: 28px;
+  font-size: 20px;
+  font-style: oblique;
+  border-radius: 10px;
+  box-shadow: 0px 15px 10px -15px #111;
+}
+
+/* To do Later! */
+.signin_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 84vh;
+}
+.signin_div{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border: 1px solid gray;
+}
+.signin_div p{
+  font-size: 40px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  box-shadow: 0px 15px 10px -15px #111;
+}
+.signin_container form{
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.signin_container form label{
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.signin_container form input{
+  outline: none;
+  height: 30px;
+  margin-bottom: 12px;
+}
+.signin_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  margin-top: 10px;
+}
+.signin_btn button{
+  padding: 3px 20px;
+  font-size: 25px;
+  background-color: blue;
+  cursor: pointer;
+}
+.home_btn{
+  border: 1px solid black;
+  padding: 3px 10px;
+  font-size: 25px;
+  border-radius: 10px;
+  position: fixed;
+  top: 30px;
+  left: 100px;
+  cursor: pointer;
+  color: blue;
+}
+.home_btn:hover{
+  background-color: blue;
+  color: white;
+}
+/* Student Container */
+
+.student_body{
+  display: flex;
+}
+.student_container, .interview_container{
+  width: 50vw;
+  height: 83vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.student_div, .interview_div{
+  width: 90%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+}
+.student_header, .interview_header{
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  font-size: 35px;
+  box-shadow: 0px 15px 10px -15px #111;
+  position: relative;
+}
+.student_header_add, .interview_header_add{
+  position: absolute;
+  right: 20px;
+  background-color: gray;
+  font-size: 20px;
+  padding: 3px 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+.student_header_add:hover{
+  background-color: blue;
+  color: white;
+}
+.interview_header_add:hover{
+  background-color: blue;
+  color: white;
+}
+.download{
+  position: absolute;
+  left: 10px;
+  top: 30px;
+}
+.student_list, .interview_list, .idp_list{
+  display: flex;
+  flex-direction: column;
+  padding: 25px 20px;
+  overflow-y: scroll;
+  height: 90%;
+}
+.idp_list{
+  width: 70%;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.external_jobs{
+  position: absolute;
+  left: 50px;
+  font-size: 30px;
+  cursor: pointer;
+  border: 1px solid gray;
+  padding: 3px 5px;
+  border-radius: 10px;
+  color: blue;
+}
+.external_jobs:hover{
+  color: white;
+  background-color: blue;
+}
+
+/* Student Component */
+
+.student_comp, .interview_comp{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.student_name{
+  font-size: 22px;
+}
+.detail_btn{
+  font-size: 18px;
+  border: 1px solid gray;
+  background-color: lightgray;
+  padding: 3px 7px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.detail_btn:hover{
+  color: white;
+  background-color: blue;
+}
+/* StudentDetailPage Styling */
+.sdp_container{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sdp_div{
+  width: 60%;
+  border: 1px solid gray;
+  padding: 20px 15px;
+  margin-top: 120px;
+  border-radius: 10px;
+}
+.sdp_field{
+  display: inline-flex;
+  width:100%;
+  margin: 10px 0px;
+  padding:0px 15px;
+  border-radius: 5px;
+}
+.sdp_property{
+  width: 150px;
+  font-size: 30px;
+}
+.sdp_property_li{
+  font-size: 25px;
+  width: 90px;
+}
+.sdp_value{
+  width: 80%;
+  font-size: 27px;
+}
+.sdp_value_li{
+  width: 80%;
+  font-size: 22px;
+}
+.sdp_interview{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 20px;
+  overflow-y: scroll;
+  height: 200px;
+  border: 1px solid gray;
+  border-radius: 7px;
+}
+.interview_form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+#interview_form_student {
+  width: 100%;
+}
+.interview_form_p{
+  border: 1px solid gray;
+  background-color: gray;
+  font-size: 27px;
+  padding: 3px 5px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 25px;
+  border-radius: 7px;
+}
+.interview_form_p:hover{
+  background-color: blue;
+  color: white;
+}
+.interview_form form{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.interview_form form label{
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.interview_form form input{
+  outline: none;
+  height: 30px;
+  margin-bottom: 12px;
+}
+.interview_form form button{
+  width: 100px;
+  font-size: 20px;
+  padding: 3px 5px;
+  background-color: blue;
+  cursor: pointer;
+}
+.idp_container{
+  height: 83vh;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+}
+.add_interview{
+  width: 100vw;
+  height: 83vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add_student_outer{
+  width: 100vw;
+  height: 83vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add_student{
+  width: 60%;
+  border: 2px solid gray;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  overflow-y: scroll;
+}
+.add_student form{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  padding: 20px 10px;
+}
+.add_student form label{
+  font-size: 30px;
+  margin-bottom: 3px;
+}
+.add_student form input{
+  height: 30px;
+  outline: none;
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+.add_student form select{
+  height: 30px;
+  outline: none;
+  font-size: 20px;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+.add_student form button{
+  height: 37px;
+  width: 100px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.add_student form button:hover{
+  background-color: blue;
+  color: white;
+}
+.add_student form ul{
+  padding-left: 60px;
+}
+.add_student form ul li{
+  width: 45%;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add_student form ul li input{
+  width: 50%;
+  height: 25px;
+}
+/* responsive */
+@media screen and (max-width: 1000px){
+  .quote{
+    width: 90%;
+  }
+  .signup_header{
+    width: 90%;
+  }
+  .form_container{
+    width: 90%;
+  }
+  .signin_div{
+    width: 60%;
+  }
+  .student_body{
+    flex-direction: column;
+  }
+  .student_container{
+    width: 100vw;
+  }
+  .interview_container{
+    width: 100vw;
+  }
+  .signout{
+    right: 50px;
+  }
+  .add_student{
+    width: 80%;
+  }
+  .add_student form ul li {
+    width: 70%;
+  }
+  .interview_form form{
+    width: 80%;
+  }
+  .sdp_div{
+    width: 80%;
+  }
+  .sdp_property_li{
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .quote{
+    width: 100%;
+  }
+  .signin{
+    right: 50px;
+  }
+  .signin_div{
+    width: 70%;
+  }
+  .home_btn{
+    left: 50px;
+  }
+  .signout{
+    right: 30px;
+    font-size: 25px;
+  }
+  .add_student form{
+    width: 80%;
+  }
+  .sdp_div{
+    width: 90%;
+  }
+  .sdp_property{
+    font-size: 26px;
+  }
+  .sdp_value{
+    font-size: 24px;
+  }
+  .idp_list{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .homepage_container{
+    flex-direction: column;
+  }
+  .quote_container{
+    width: 100%;
+    height: 55vh;
+    margin-top: 105px;
+  }
+  .signup_container{
+    width: 100%;
+    height: 65vh;
+  }
+  .quote{
+    width: 85%;
+  }
+  .signin{
+    right: 20px;
+  }
+  .home_navbar{
+    position: fixed;
+    width: 100vw;
+  }
+  .dashboard_navbar{
+    justify-content: start;
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .home_navbar{
+    justify-content: space-around;
+  }
+  .signin_div{
+    width: 80%;
+  }
+  .dashboard_header p{
+    font-size: 38px;
+  }
+  .student_name{
+    font-size: 19px;
+  }
+  .add_student form label{
+    font-size: 25px;
+  }
+  .add_student form{
+    width: 90%;
+  }
+  .add_student form button{
+    font-size: 25px;
+  }
+  .sdp_property{
+    font-size: 24px;
+    width: 110px;
+    padding: 0px 0px;
+  }
+  .sdp_value{
+    font-size: 22px;
+  }
+  .sdp_field{
+    padding: 0px 0px;
+  }
+  .interview_form_p{
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .home_navbar{
+    justify-content: start;
+    padding-left: 15px;
+  }
+  .signin{
+    font-size: 20px;
+  }
+  .quote{
+    width: 90%;
+    padding: 10px;
+  }
+  .home_header p{
+    font-size: 35px;
+  }
+  .signup_header p{
+    font-size: 35px;
+  }
+  .form_container form label{
+    font-size: 22px;
+  }
+  .form_container form button {
+    font-size: 21px;
+  }
+  .home_btn{
+    left: 75%;
+    font-size: 21px;
+  }
+  .signin_div{
+    width: 90%;
+  }
+  .dashboard_navbar{
+    padding-left: 10px;
+  }
+  .signout{
+    right: 15px;
+    font-size: 20px;
+  }
+  .dashboard_header p{
+    font-size: 33px;
+  }
+  .student_name{
+    font-size: 18px;
+  }
+  .idp_navbar{
+    justify-content: start;
+    padding-left: 20px;
+  }
+  .add_student{
+    width: 90%;
+  }
+  .interview_form form{
+    width: 90%;
+  }
+  .idp_header p{
+    font-size: 36px;
+  }
+  .sdp_div{
+    width: 98%;
+  }
+  .sdp_property{
+    font-size: 20px;
+  }
+  .sdp_value{
+    font-size: 18px;
+  }
+  .sdp_property_li{
+    font-size: 20px;
+  }
+  .sdp_value_li{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .home_navbar{
+    padding-left: 8px;
+  }
+  .signin{
+    right: 8px;
+  }
+  .quote{
+    width: 95%;
+    padding: 5px;
+  }
+  .dashboard_navbar{
+    padding: 6px;
+  }
+  .dashboard_header p{
+    font-size: 30px;
+  }
+  .student_name{
+    font-size: 16px;
+  }
+  .signout{
+    top: 35px;
+    padding: 2px 3px;
+    right: 5px;
+  }
+}
