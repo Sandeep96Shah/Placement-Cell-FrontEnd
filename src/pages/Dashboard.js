@@ -13,7 +13,7 @@ const Dashboard = (props) => {
     useEffect(() => {
         props.dispatch(all_students());
         props.dispatch(all_interviews());
-    },[]);
+    });
     // console.log("Dashboard props", props);
     // console.log("interviews", props.interview.interviews);
     // console.log("students", props.students.students);
