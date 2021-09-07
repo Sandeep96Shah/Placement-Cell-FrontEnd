@@ -3,7 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import '../index.css';
 import { addInterview } from '../actions/index';
-
+//component used as a page where user can add the interview
  function AddInterview(props) {
 
      const [ companyName, setCompanyName ] = useState("");
@@ -47,6 +47,7 @@ import { addInterview } from '../actions/index';
     )
 }
 
+//function to connect to the redux store
 function mapStateToprops(state){
     return{
        students:state.student,

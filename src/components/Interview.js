@@ -2,11 +2,12 @@ import React from 'react';
 import { useHistory } from 'react-router';
 import '../index.css';
 
+//component to show the interview
  const Interview = (props) => {
 
     const history = useHistory();
     const { val, name, result, students } = props;
-    console.log("studentsss", students);
+    // console.log("studentsss", students);
     const interviewDetails = {
         students,
         name,

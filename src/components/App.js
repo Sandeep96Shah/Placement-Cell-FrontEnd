@@ -9,9 +9,8 @@ import InterviewDetailPage from '../pages/InterviewDetailPage';
 import AddInterview from '../pages/AddInterview';
 import AddStudent from '../pages/AddStudent';
 
+//component to handle the routes
  const App = (props) => {
-
-  //same problem only url changes and not the page!
  
   return (
     <div>
@@ -29,6 +28,7 @@ import AddStudent from '../pages/AddStudent';
   )
 }
 
+//function to connect to the redux store
 function mapStateToProps(state) {
   return {
     students:state.student,

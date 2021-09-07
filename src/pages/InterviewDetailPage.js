@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Student from '../components/Student';
 
+//component used as apage to display the interview details
  const InterviewDetailPage = (props) => {
      console.log("interviewdetailpage", props);
      const detail = props.location.state.students;

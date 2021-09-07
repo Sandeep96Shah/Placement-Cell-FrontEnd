@@ -1,9 +1,11 @@
 import {ADD_STUDENT, FETCH_STUDENT, UPDATE_STUDENT } from '../actions/actionTypes';
 
+//initial state
 const initialState = {
     students:[],
 }
 
+//Student reducers based on action.type
 export default function student(state=initialState, action){
     switch(action.type){
         case FETCH_STUDENT:

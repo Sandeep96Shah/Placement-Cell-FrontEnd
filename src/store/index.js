@@ -5,6 +5,7 @@ import reducer from '../reducers/index';
 
 let store;
 
+//creating the store
 export function configureStore() {
     store = createStore(reducer, applyMiddleware(thunk, logger));
     return store;

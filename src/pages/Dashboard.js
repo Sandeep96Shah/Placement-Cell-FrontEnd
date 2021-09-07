@@ -9,23 +9,17 @@ import { CSVLink } from'react-csv';
 
 import { FaDownload } from 'react-icons/fa';
 
+//component used as a page to display the students and interviews information
 const Dashboard = (props) => {
     useEffect(() => {
         props.dispatch(all_students());
         props.dispatch(all_interviews());
     });
-    // console.log("Dashboard props", props);
-    // console.log("interviews", props.interview.interviews);
-    // console.log("students", props.students.students);
     const interviews = props.interview.interviews;
     const students = props.students.students;
     const handleSignOut = () => {
         localStorage.removeItem('token');
     }
-
-    // const handleExternalJobs = () => {
-    //     props.dispatch(external_jobs());
-    // }
 
     const headerStudent = [
         { label : "Name", key : "name" },
@@ -135,6 +129,7 @@ const Dashboard = (props) => {
     )
 }
 
+//function to connect to the redux store
 function mapStateToprops(state){
     return{
        students:state.student,

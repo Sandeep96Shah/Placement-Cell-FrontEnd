@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { addStudent } from '../actions';
-
+//component used as a page where user can add the student
  const AddStudent = (props) => {
 
     const [ name, setName ] = useState("");
@@ -118,6 +118,8 @@ import { addStudent } from '../actions';
         </>
     )
 }
+
+//function to connect to the redux store
 function mapStateToprops(state){
     return{
        students:state.student,

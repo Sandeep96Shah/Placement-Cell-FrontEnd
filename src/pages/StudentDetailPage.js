@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Interview from '../components/Interview';
 import { update_student } from '../actions';
 
+//component used as a page to display the student details
 const StudentDetailPage = (props) => {
     const [add, setAdd] = useState(false);
     const [ companyName, setCompanyName ] = useState("");
@@ -93,6 +94,7 @@ const StudentDetailPage = (props) => {
     )
 }
 
+//function to connect to the redux store
 function mapStateToprops(state){
     return{
        students:state.student,

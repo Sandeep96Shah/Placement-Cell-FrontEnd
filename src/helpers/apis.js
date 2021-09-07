@@ -1,3 +1,4 @@
+//All the APIs to connect to the server
 const API_ROOT = 'https://cn-placement-cell.herokuapp.com';
 
 export const APIUrls = {

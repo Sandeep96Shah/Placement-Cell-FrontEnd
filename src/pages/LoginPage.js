@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import '../index.css';
 import { user } from '../actions/index';
 
+//component used as a page to display the login
 const LoginPage = (props) => {
 
     const [ email, setEmail ] = useState("");
@@ -50,6 +51,8 @@ const LoginPage = (props) => {
         </div>
     )
 }
+
+//function to connect to the redux store
 function mapStateToProps(state) {
     return {
       student:state.student,

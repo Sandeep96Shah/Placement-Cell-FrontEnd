@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import '../index.css';
 import { signup } from '../actions';
 
+//component used as a page to display the homepage
 const HomePage = (props) => {
 
     const [ name, setName ] = useState("");

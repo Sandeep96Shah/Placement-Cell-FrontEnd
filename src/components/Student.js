@@ -2,6 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import '../index.css';
 
+//component to show the student
  const Student = (props) => {
 
     const { val, name, result } = props;
